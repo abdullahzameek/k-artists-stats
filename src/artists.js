@@ -1,16 +1,16 @@
 const artists = [
-    {
-        "id": "0b1sIQumIAsNbqAoIClSpy",
-        "name": "j-hope",
-        "followers": 14183839,
-        "normalized_followers": 10000.0
-    },
-    {
-        "id": "2auC28zjQyVTsiZKNgPRGs",
-        "name": "RM",
-        "followers": 13121069,
-        "normalized_followers": 9250.717506886007
-    },
+    // {
+    //     "id": "0b1sIQumIAsNbqAoIClSpy",
+    //     "name": "j-hope",
+    //     "followers": 14183839,
+    //     "normalized_followers": 10000.0
+    // },
+    // {
+    //     "id": "2auC28zjQyVTsiZKNgPRGs",
+    //     "name": "RM",
+    //     "followers": 13121069,
+    //     "normalized_followers": 9250.717506886007
+    // },
     {
         "id": "4XDi67ZENZcbfKnvMnTYsI",
         "name": "Jay Park",
@@ -23,12 +23,12 @@ const artists = [
         "followers": 734777,
         "normalized_followers": 518.0361645467418
     },
-    {
-        "id": "5RmQ8k4l3HZ8JoPb4mNsML",
-        "name": "Agust D",
-        "followers": 11159179,
-        "normalized_followers": 7867.530335235122
-    },
+    // {
+    //     "id": "5RmQ8k4l3HZ8JoPb4mNsML",
+    //     "name": "Agust D",
+    //     "followers": 11159179,
+    //     "normalized_followers": 7867.530335235122
+    // },
     {
         "id": "2u7CP5T30c8ctenzXgEV1W",
         "name": "pH-1",
@@ -83,12 +83,12 @@ const artists = [
         "followers": 562880,
         "normalized_followers": 396.84398494173223
     },
-    {
-        "id": "30b9WulBM8sFuBo17nNq9c",
-        "name": "G-DRAGON",
-        "followers": 2867832,
-        "normalized_followers": 2021.8994353854628
-    },
+    // {
+    //     "id": "30b9WulBM8sFuBo17nNq9c",
+    //     "name": "G-DRAGON",
+    //     "followers": 2867832,
+    //     "normalized_followers": 2021.8994353854628
+    // },
     {
         "id": "3hvinNZRzTLoREmqFiKr1b",
         "name": "CHANGMO",
