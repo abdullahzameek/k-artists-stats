@@ -33,6 +33,13 @@ const options = {
   },
 };
 
+const randomRGBA = () => {
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  var a = Math.random().toFixed(1); // Alpha value between 0.0 and 1.0
+  return "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
+}
 
 export const data = {
   datasets: [
@@ -42,7 +49,7 @@ export const data = {
         x: artist.name,
         y: artist.normalized_followers,
       })),
-      backgroundColor: "rgba(75,192,192,1)",
+      backgroundColor: randomRGBA(),
     },
   ],
 };
