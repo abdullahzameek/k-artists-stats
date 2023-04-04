@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  Chart as ChartJS,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Tooltip,
+  Legend,
+  CategoryScale
+} from 'chart.js';
+import { Scatter } from "react-chartjs-2";
+import artists from './artists';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ChartJS.register(LinearScale, CategoryScale, PointElement, LineElement, Tooltip, Legend);
+
+
+const options = {
+  responsive: true,
+  title: { display: true, text: "Scatter Plot of Followers" },
+  scales: {
+    x: {
+      ticks: {
+        display: true,
+      },
+      type: "category",
+      labels: artists.map((artist) => artist.name),
+    },
+    y: {
+      ticks: {
+        beginAtZero: true,
+      },
+    },
+  },
+};
+
+
+export const data = {
+  datasets: [
+    {
+      label: "Followers",
+      data: artists.map((artist) => ({
+        x: artist.name,
+        y: artist.normalized_followers,
+      })),
+      backgroundColor: "rgba(75,192,192,1)",
+    },
+  ],
+};
+
+export default function App() {
+  return <Scatter options={options} data={data} />;
 }
-
-export default App;
